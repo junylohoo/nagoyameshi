@@ -3,7 +3,8 @@ import environ # 追記
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(BASE_DIR / '.env')
+
 STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
 STRIPE_WEBHOOK_SECRET = os.environ.get("STRIPE_WEBHOOK_SECRET")
 STRIPE_PUBLISHABLE_KEY = "pk_test_51RaRiaP0Qa043TwiJk5e9QnZ81YZTtB9Dj2bWFkBClAVSSf0M7JatOJA6gkkO274mIJkQfCXosHxGnCOWsjoQW5W00RJAFhwR8"
