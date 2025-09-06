@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}ログイン成功{% endblock %}
+
+{% block main %}
+<div class="container mt-5 text-center">
+  <h1>ログイン成功！</h1>
+  <p>3秒後にトップページへ移動します。</p>
+</div>
+
+<!-- 3秒後に index ページへ遷移 -->
+<script>
+  setTimeout(function() {
+    window.location.href = "{% url 'top' %}";
+  }, 3000);
+</script>
+{% endblock %}

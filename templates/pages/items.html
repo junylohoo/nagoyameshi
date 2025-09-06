@@ -1,0 +1,16 @@
+
+  <h2>{{ category.name }}のお店一覧</h2>
+  {% if items %}
+    <ul>
+      {% for item in items %}
+        <li>
+          <a href="{% url 'item_detail' item.id %}">
+            {{ item.name }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>このカテゴリのお店はまだありません。</p>
+  {% endif %}
+

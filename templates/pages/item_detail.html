@@ -1,0 +1,82 @@
+{% load static %}
+<div class="container mt-5">
+  <h2 class="mb-4">{{ item.name }}</h2>
+
+  {% if item.image %}
+    <img src="{{ item.image.url }}" class="img-fluid mb-3" alt="{{ item.name }}">
+  {% else %}
+    <img src="{% static 'img/category/shop.jpg' %}" class="img-fluid mb-3" alt="{{ item.name }}">
+  {% endif %}
+
+  <p><strong>カテゴリー:</strong> {{ item.category.name }}</p>
+  <p><strong>住所:</strong> {{ item.address }}</p>
+  <p><strong>電話番号:</strong> {{ item.phone }}</p>
+  <p><strong>説明:</strong> {{ item.description|default:"説明はありません" }}</p>
+
+  <p><strong>平均評価:</strong> ⭐️ 
+    {% if avg_rating %}
+        {{ avg_rating }} / 5
+    {% else %}
+        -
+    {% endif %}
+  </p>
+ 
+
+  <h4 class="mt-4">レビュー</h4>
+  {% if reviews %}
+    <ul class="list-group">
+      {% for review in reviews %}
+        <li class="list-group-item">
+          <strong>{{ review.user.username }}</strong> ⭐️ {{ review.rating }}<br>
+          {{ review.title }}<br>
+          {{ review.content }}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>レビューはまだありません。</p>
+  {% endif %}
+
+  {% if user.is_authenticated and user.is_premium %}
+    <a href="{% url 'review_write' item.id %}" class="btn btn-primary mt-3">レビューを書く</a>
+  {% elif user.is_authenticated %}
+    <p class="mt-3">レビューを書くには有料会員になる必要があります。
+       <a href="{% url 'premium' %}">有料会員登録はこちら</a>
+    </p>
+  {% else %}
+    <p class="mt-3">レビューを書くにはログインが必要です。
+       <a href="{% url 'login' %}">ログインはこちら</a>
+    </p>
+  {% endif %}
+
+  {% if user.is_authenticated and user.is_premium %}
+    <a href="{% url 'toggle_favorite' item.id %}" class="btn btn-outline-danger mt-3">
+        {% if is_favorite %}
+            ❤️ お気に入り解除
+        {% else %}
+            🤍 お気に入り
+        {% endif %}
+    </a>
+  {% elif user.is_authenticated %}
+    <p class="mt-3">お気に入り登録は有料会員のみ可能です。
+       <a href="{% url 'premium' %}">有料会員登録はこちら</a>
+    </p>
+  {% else %}
+    <p class="mt-3">お気に入り登録にはログインが必要です。
+       <a href="{% url 'login' %}">ログインはこちら</a>
+    </p>
+  {% endif %}
+
+  {% if user.is_authenticated and user.is_premium %}
+    <a href="{% url 'make_reservation' item.id %}" class="btn btn-success mt-3">予約する</a>
+{% elif user.is_authenticated %}
+    <p class="mt-3">予約は有料会員になる必要があります。
+       <a href="{% url 'premium' %}">有料会員登録はこちら</a>
+    </p>
+{% else %}
+    <p class="mt-3">予約はログインが必要です。
+       <a href="{% url 'login' %}">ログインはこちら</a>
+    </p>
+{% endif %}
+
+</div>

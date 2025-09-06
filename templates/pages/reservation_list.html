@@ -1,0 +1,21 @@
+{% load static %}
+<div class="container mt-5">
+  <h2 class="mb-4">予約リスト</h2>
+
+  {% if reservations %}
+    <ul class="list-group">
+      {% for res in reservations %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div>
+            <strong>{{ res.item.name }}</strong><br>
+            カテゴリー: {{ res.item.category.name }}<br>
+            予約日時: {{ res.reserved_at|date:"Y-m-d H:i" }}
+          </div>
+          <a href="{% url 'item_detail' res.item.id %}" class="btn btn-info">詳細</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>まだ予約はありません。</p>
+  {% endif %}
+</div>

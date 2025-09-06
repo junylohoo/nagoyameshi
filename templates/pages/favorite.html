@@ -1,0 +1,17 @@
+<div class="container my-5">
+    <h2 class="mb-4 text-center">お気に入りのお店</h2>
+
+    {% if items %}
+        <ul class="list-group">
+            {% for item in items %}
+                <li class="list-group-item text-center">
+                    <a href="{% url 'item_detail' item.id %}" class="text-decoration-none">
+                        {{ item.name }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p class="text-center mt-3">お気に入りに登録されたお店はまだありません。</p>
+    {% endif %}
+</div>

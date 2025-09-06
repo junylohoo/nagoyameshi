@@ -1,0 +1,36 @@
+{% load static %}
+<div class="container my-5">
+  <h2 class="mb-4 text-center">レビューのあるお店</h2>
+
+  {% if reviewed_items %}
+    <div class="row">
+      {% for item in reviewed_items %}
+        <div class="col-md-4 mb-3">
+          <a href="{% url 'item_detail' item.id %}">
+            {% if item.image %}
+                <img src="{{ item.image.url }}" class="review-img" alt="{{ item.name }}">
+            {% else %}
+                <img src="{% static 'img/category/shop.jpg' %}" class="review-img" alt="{{ item.name }}">
+            {% endif %}
+        </a>
+          <p class="mt-2 text-center">{{ item.name }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="text-center mt-3">有料会員によるレビューはまだありません。</p>
+  {% endif %}
+</div>
+
+<style>
+  .review-img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+</style>

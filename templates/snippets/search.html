@@ -1,0 +1,20 @@
+<div class="bg-light mb-4 py-4">
+    <div class="container nagoyameshi-container">
+        <h2 class="mb-4 text-center">キーワードから探す</h2>
+        <form method="GET" action="/" class="user-search-box">
+            <div class="input-group">
+                <input type="text" class="form-control" 
+                       placeholder="店舗名・エリア・カテゴリ" 
+                       name="keyword" 
+                       value="{{ keyword }}">
+                <button type="submit" class="btn btn-primary text-white shadow-sm">検索</button> 
+            </div>
+        </form>
+
+        {% if not_found %}
+            <div class="alert alert-warning mt-4 text-center">
+                「<strong>{{ keyword }}</strong>」に該当する店舗は見つかりませんでした。
+            </div>
+        {% endif %}
+    </div>
+</div>
