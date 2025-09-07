@@ -1,75 +1,76 @@
-<div class= "container nagoyameshi-container mt-5">
+{% load static %}
+
+<div class="container nagoyameshi-container mt-5">
     <h2 class="mb-4 text-center">カテゴリから探す</h2>
 
-        <div class="row row-cols-xl-6 row-cols-md-3 row-cols-2 g-4 mb-4">
-            <div class="col">
-                <a href="{% url 'item_list' category_slug='washoku' %}" class="card h-100 border-0 shadow-sm text-decoration-none">                       
-                    <img src="/static/img/category/和食.jpeg" class="card-img-top rounded" alt="和食">
-                    <div class="card-body text-center">
-                        <h5 class="card-title text-dark mb-0">和食</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="{% url 'item_list' category_slug='udon' %}" class="card h-100 border-0 shadow-sm text-decoration-none">
-                    <img src="/static/img/category/うどん.jpg" class="card-img-top rounded" alt="うどん">
-                    <div class="card-body text-center">
-                        <h5 class="card-title text-dark mb-0">うどん</h5>
-                    </div>
-                </a>
-            </div>    
-            <div class="col">
-                <a href="{% url 'item_list' category_slug='donburi' %}" class="card h-100 border-0 shadow-sm text-decoration-none">
-                    <img src="/static/img/category/1.jpg" class="card-img-top rounded" alt="丼物">
-                        <div class="card-body text-center">
-                            <h5 class="card-title text-dark mb-0">丼物</h5>
-                        </div>
-                </a>
-            </div> 
-            
-            <div class="col">
-                <a href="{% url 'item_list' category_slug='ramen' %}" class="card h-100 border-0 shadow-sm text-decoration-none">
-                        <img src="/static/img/category/ラーメン.webp" class="card-img-top rounded" alt="ラーメン">
-                        <div class="card-body text-center">
-                            <h5 class="card-title text-dark mb-0">ラーメン</h5>
-                        </div>
-                </a>
-            </div> 
-            
-            <div class="col">
-                <a href="{% url 'item_list' category_slug='oden' %}" class="card h-100 border-0 shadow-sm text-decoration-none">
-                        <img src="/static/img/category/おでん.jpeg" class="card-img-top rounded" alt="おでん">
-                        <div class="card-body text-center">   
-                            <h5 class="card-title text-dark mb-0">おでん</h5>
-                        </div>
-                </a>
-            </div>  
-            
-            <div class="col">
-                <a href="{% url 'item_list' category_slug='agemono' %}" class="card h-100 border-0 shadow-sm text-decoration-none">
-                        <img src="/static/img/category/揚げ物.jpg" class="card-img-top rounded" alt="揚げ物">
-                        <div class="card-body text-center">
-                            <h5 class="card-title text-dark mb-0">揚げ物</h5>
-                        </div>
-                </a>
-            </div>            
+    <div class="row row-cols-xl-6 row-cols-md-3 row-cols-2 g-4 mb-4">
+        <div class="col">
+            <a href="{% url 'item_list' category_slug='washoku' %}" class="card h-100 border-0 shadow-sm text-decoration-none">                       
+                <img src="{% static 'img/category/washoku.jpg' %}" class="card-img-top rounded" alt="和食">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-dark mb-0">和食</h5>
+                </div>
+            </a>
         </div>
+        <div class="col">
+            <a href="{% url 'item_list' category_slug='udon' %}" class="card h-100 border-0 shadow-sm text-decoration-none">
+                <img src="{% static 'img/category/udon.jpg' %}" class="card-img-top rounded" alt="うどん">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-dark mb-0">うどん</h5>
+                </div>
+            </a>
+        </div>    
+        <div class="col">
+            <a href="{% url 'item_list' category_slug='donburi' %}" class="card h-100 border-0 shadow-sm text-decoration-none">
+                <img src="{% static 'img/category/donburi.jpg' %}" class="card-img-top rounded" alt="丼物">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-dark mb-0">丼物</h5>
+                </div>
+            </a>
+        </div> 
+        
+        <div class="col">
+            <a href="{% url 'item_list' category_slug='ramen' %}" class="card h-100 border-0 shadow-sm text-decoration-none">
+                <img src="{% static 'img/category/ramen.webp' %}" class="card-img-top rounded" alt="ラーメン">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-dark mb-0">ラーメン</h5>
+                </div>
+            </a>
+        </div> 
+        
+        <div class="col">
+            <a href="{% url 'item_list' category_slug='oden' %}" class="card h-100 border-0 shadow-sm text-decoration-none">
+                <img src="{% static 'img/category/oden.jpeg' %}" class="card-img-top rounded" alt="おでん">
+                <div class="card-body text-center">   
+                    <h5 class="card-title text-dark mb-0">おでん</h5>
+                </div>
+            </a>
+        </div>  
+        
+        <div class="col">
+            <a href="{% url 'item_list' category_slug='agemono' %}" class="card h-100 border-0 shadow-sm text-decoration-none">
+                <img src="{% static 'img/category/agemono.jpg' %}" class="card-img-top rounded" alt="揚げ物">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-dark mb-0">揚げ物</h5>
+                </div>
+            </a>
+        </div>            
+    </div>
 
-        <div class="mb-5">
-            <h4 class="mb-3">その他のカテゴリ</h4>
-            <a href="{% url 'item_list' category_slug='izakaya' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">居酒屋</a>
-            <a href="{% url 'item_list' category_slug='yakiniku' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">焼肉</a>                                                    
-            <a href="{% url 'item_list' category_slug='kare' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">カレー</a>
-            <a href="{% url 'item_list' category_slug='tyuka' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">中華料理</a>
-            <a href="{% url 'item_list' category_slug='hanberga' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">ハンバーガー</a>
-            <a href="{% url 'item_list' category_slug='soba' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">そば</a>
-            <a href="{% url 'item_list' category_slug='okonomi' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">お好み焼き</a>
-            <a href="{% url 'item_list' category_slug='takoyaki' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">たこ焼き</a>
-            <a href="{% url 'item_list' category_slug='yakitori' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">焼き鳥</a>
-            <a href="{% url 'item_list' category_slug='sukiyaki' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">すき焼き</a>
-            <a href="{% url 'item_list' category_slug='tenpura' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">天ぷら</a>
-
-        </div>
+    <div class="mb-5">
+        <h4 class="mb-3">その他のカテゴリ</h4>
+        <a href="{% url 'item_list' category_slug='izakaya' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">居酒屋</a>
+        <a href="{% url 'item_list' category_slug='yakiniku' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">焼肉</a>                                                    
+        <a href="{% url 'item_list' category_slug='kare' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">カレー</a>
+        <a href="{% url 'item_list' category_slug='tyuka' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">中華料理</a>
+        <a href="{% url 'item_list' category_slug='hanberga' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">ハンバーガー</a>
+        <a href="{% url 'item_list' category_slug='soba' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">そば</a>
+        <a href="{% url 'item_list' category_slug='okonomi' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">お好み焼き</a>
+        <a href="{% url 'item_list' category_slug='takoyaki' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">たこ焼き</a>
+        <a href="{% url 'item_list' category_slug='yakitori' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">焼き鳥</a>
+        <a href="{% url 'item_list' category_slug='sukiyaki' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">すき焼き</a>
+        <a href="{% url 'item_list' category_slug='tenpura' %}" class="btn btn-outline-secondary btn-sm mr-2 mb-2">天ぷら</a>
+    </div>
 </div>
 
 <style>
