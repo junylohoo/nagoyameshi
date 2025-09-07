@@ -1,9 +1,13 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from base.views import accounts_views, item_views, review_views, reservation_views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     # review_views.py にビューを作成
+    
+    path('admin/', admin.site.urls),
     path('my-reviews/', review_views.MyReviewListView.as_view(), name='my_review_list'),
     path('reservation/list/', reservation_views.reservation_list, name='reservation_list'),
     path('reservation/<str:item_id>/', reservation_views.make_reservation, name='make_reservation'),
@@ -34,3 +38,6 @@ urlpatterns = [
 
 ]
 
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
