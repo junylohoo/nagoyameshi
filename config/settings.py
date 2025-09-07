@@ -86,8 +86,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'  # collectstatic でまとめる
 
 # メディアファイル（ユーザーアップロード画像）
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+
 
 # デフォルト自動ID
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
