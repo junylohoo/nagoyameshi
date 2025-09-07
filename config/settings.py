@@ -84,6 +84,9 @@ USE_TZ = True
 # 静的ファイル（CSS/JS など）
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'  # collectstatic でまとめる
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
 
 # メディアファイル（ユーザーアップロード画像）
 
