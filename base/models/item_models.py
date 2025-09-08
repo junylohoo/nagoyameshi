@@ -9,7 +9,7 @@ def create_id():
 
 def upload_image_to(instance, filename):
     item_id = instance.id
-    return os.path.join('static', 'items', item_id, filename)
+    return os.path.join('items', item_id, filename)
 
 
 class Tag(models.Model):
