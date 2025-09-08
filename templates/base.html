@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NAGOYAMESHI</title>
-  <!-- Bootstrap 5（staticから読み込み） -->
-  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <!-- Bootstrap 4.5.0 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
-
 <body>
   <header>
     {% block header %}
@@ -22,6 +22,7 @@
       {% include 'snippets/headline.html' %}
     {% endblock %}
     
+    {# ここが各ページ共通で「メインの一番上」に表示される検索 #}
     {% block search %}
       {% include 'snippets/search.html' %}
     {% endblock %}
@@ -30,7 +31,7 @@
       {% include 'snippets/category.html' %}
     {% endblock %}
     
-    {% include 'snippets/review.html' %}
+      {% include 'snippets/review.html' %}
     {% block main %}{% endblock %}
   </main>
 
@@ -39,8 +40,5 @@
       {% include 'snippets/footer.html' %}
     {% endblock %}
   </footer>
-
-  <!-- Bootstrap 5 の JS -->
-  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 </body>
 </html>
