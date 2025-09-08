@@ -8,8 +8,10 @@ def create_id():
     return get_random_string(22)
 
 def upload_image_to(instance, filename):
-    item_id = instance.id
-    return os.path.join('items', item_id, filename)
+    # 保存先: MEDIA_ROOT/items/<item_id>/<filename>
+    folder_path = os.path.join(settings.MEDIA_ROOT, 'items', instance.id)
+    os.makedirs(folder_path, exist_ok=True)  # ディレクトリがなければ作る
+    return os.path.join('items', instance.id, filename)  # MEDIA_ROOT からの相対パスを返す
 
 
 class Tag(models.Model):
