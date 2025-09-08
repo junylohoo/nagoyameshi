@@ -7,7 +7,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     # review_views.py にビューを作成
     path('my-reviews/', review_views.MyReviewListView.as_view(), name='my_review_list'),
-    path('my-reviews/delete/<int:item_id>/', review_views.delete_my_review, name='delete_my_review'),
+    path("my-reviews/delete/<str:item_id>/", review_views.delete_reviewed_item, name="delete_reviewed_item"),
 
     path('reservation/list/', reservation_views.reservation_list, name='reservation_list'),
     path('reservation/<str:item_id>/', reservation_views.make_reservation, name='make_reservation'),

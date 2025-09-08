@@ -8,12 +8,11 @@ from django.views.generic import ListView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
 @login_required
-def delete_my_review(request, item_id):
-    # 自分が書いた指定のお店のレビューを削除
-    reviews = Review.objects.filter(user=request.user, item_id=item_id)
-    if reviews.exists():
-        reviews.delete()
+def delete_reviewed_item(request, item_id):
+    # 自分のレビューだけ削除
+    Review.objects.filter(user=request.user, item_id=item_id).delete()
     return redirect('my_review_list')
+
 
 
 class MyReviewListView(LoginRequiredMixin, UserPassesTestMixin, ListView):

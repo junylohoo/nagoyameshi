@@ -8,11 +8,11 @@
           <a href="{% url 'item_detail' item.id %}" class="text-decoration-none">
             {{ item.name }}
           </a>
-
+          
           <!-- 削除ボタン -->
-          <form method="post" action="{% url 'delete_my_review' item.id %}" style="display:inline;">
+          <form method="post" action="{% url 'delete_reviewed_item' item.id %}" style="margin:0;">
             {% csrf_token %}
-            <button type="submit" class="btn btn-danger btn-sm">削除</button>
+            <button type="submit" class="btn btn-sm btn-danger">削除</button>
           </form>
         </li>
       {% endfor %}
