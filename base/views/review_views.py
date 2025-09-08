@@ -7,6 +7,15 @@ from django.db.models import Count
 from django.views.generic import ListView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
+@login_required
+def delete_my_review(request, item_id):
+    # 自分が書いた指定のお店のレビューを削除
+    reviews = Review.objects.filter(user=request.user, item_id=item_id)
+    if reviews.exists():
+        reviews.delete()
+    return redirect('my_review_list')
+
+
 class MyReviewListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
     """
     自分が書いたレビューに紐づく『お店(Item)』だけを名前リンクで表示。
