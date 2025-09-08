@@ -1,0 +1,992 @@
+[
+{
+  "model": "base.item",
+  "pk": "1SL9CUeZdDAR7RJrzKte7b",
+  "fields": {
+    "name": "kar",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:33:34.602Z",
+    "updated_at": "2025-09-02T04:33:34.602Z",
+    "image": "static/items/1SL9CUeZdDAR7RJrzKte7b/shop.jpg",
+    "category": "kare",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "2ixUJMLpoO9cNMLXNj6j4o",
+  "fields": {
+    "name": "gこ",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:19:51.262Z",
+    "updated_at": "2025-09-02T04:19:51.262Z",
+    "image": "static/items/2ixUJMLpoO9cNMLXNj6j4o/shop.jpg",
+    "category": "ramen",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "36C7eZJsrFZ30fCfpwgtTU",
+  "fields": {
+    "name": "dじゃい",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:44:13.803Z",
+    "updated_at": "2025-09-02T04:44:13.803Z",
+    "image": "static/items/36C7eZJsrFZ30fCfpwgtTU/shop.jpg",
+    "category": "yakitori",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "3hMwHmBq2Vevy1LG3K422w",
+  "fields": {
+    "name": "dsjia",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:41:16.423Z",
+    "updated_at": "2025-09-02T04:41:16.423Z",
+    "image": "static/items/3hMwHmBq2Vevy1LG3K422w/shop.jpg",
+    "category": "okonomi",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2871",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "44yJO8IFkvyjlPGsb6yWWg",
+  "fields": {
+    "name": "焼き焼き",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:31:25.682Z",
+    "updated_at": "2025-09-02T04:31:25.683Z",
+    "image": "static/items/44yJO8IFkvyjlPGsb6yWWg/shop.jpg",
+    "category": "yakiniku",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "4mOyviYkq6mZi5P0848yJa",
+  "fields": {
+    "name": "くぃだ",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:44:52.173Z",
+    "updated_at": "2025-09-02T04:44:52.173Z",
+    "image": "static/items/4mOyviYkq6mZi5P0848yJa/shop.jpg",
+    "category": "yakitori",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-6623",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "5JZsjAiAmCXw3WN0iBePBx",
+  "fields": {
+    "name": "あsd",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:30:38.835Z",
+    "updated_at": "2025-09-02T04:30:38.835Z",
+    "image": "static/items/5JZsjAiAmCXw3WN0iBePBx/shop.jpg",
+    "category": "izakaya",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "5VBH4M3BK3JjhJBCWovIBk",
+  "fields": {
+    "name": "天く",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:48:01.920Z",
+    "updated_at": "2025-09-02T04:48:01.921Z",
+    "image": "static/items/5VBH4M3BK3JjhJBCWovIBk/shop.jpg",
+    "category": "tenpura",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "6WL5hjUvvBmwUwAmlMIgE5",
+  "fields": {
+    "name": "dfa",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:31:52.534Z",
+    "updated_at": "2025-09-02T04:31:52.534Z",
+    "image": "static/items/6WL5hjUvvBmwUwAmlMIgE5/shop.jpg",
+    "category": "yakiniku",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "7ZLDnILEl36uun8LyAuUwW",
+  "fields": {
+    "name": "おくぃ",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:41:52.794Z",
+    "updated_at": "2025-09-02T04:41:52.794Z",
+    "image": "static/items/7ZLDnILEl36uun8LyAuUwW/shop.jpg",
+    "category": "okonomi",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2871",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "9akPx8AhjvD5JNkKrnmWx7",
+  "fields": {
+    "name": "djiq",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:39:42.724Z",
+    "updated_at": "2025-09-02T04:39:42.724Z",
+    "image": "",
+    "category": "hanberga",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "9m9AdQy9kVxfF5u73nitNw",
+  "fields": {
+    "name": "会うおい",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:46:23.735Z",
+    "updated_at": "2025-09-02T04:46:23.735Z",
+    "image": "static/items/9m9AdQy9kVxfF5u73nitNw/shop.jpg",
+    "category": "sukiyaki",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "CigKEk8id4i0WfTLfn12fJ",
+  "fields": {
+    "name": "qooop",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:38:01.397Z",
+    "updated_at": "2025-09-02T04:38:01.398Z",
+    "image": "static/items/CigKEk8id4i0WfTLfn12fJ/shop.jpg",
+    "category": "hanberga",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2871",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "Cn47dmMI9fQCnUdkgs7E0J",
+  "fields": {
+    "name": "だおお",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:46:59.244Z",
+    "updated_at": "2025-09-02T04:46:59.244Z",
+    "image": "static/items/Cn47dmMI9fQCnUdkgs7E0J/shop.jpg",
+    "category": "sukiyaki",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "ELRZXL0FhwDULdG6NyUR7N",
+  "fields": {
+    "name": "じあぱい",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:36:23.535Z",
+    "updated_at": "2025-09-02T04:36:23.536Z",
+    "image": "static/items/ELRZXL0FhwDULdG6NyUR7N/shop.jpg",
+    "category": "tyuka",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "G0ZdBbJfSMSIF8tnj6GGly",
+  "fields": {
+    "name": "あいお",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:36:51.764Z",
+    "updated_at": "2025-09-02T04:36:51.764Z",
+    "image": "static/items/G0ZdBbJfSMSIF8tnj6GGly/shop.jpg",
+    "category": "tyuka",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "HdxKoRcxaiHhfUroU3SnUD",
+  "fields": {
+    "name": "おでん199",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:26:08.839Z",
+    "updated_at": "2025-09-02T04:26:08.839Z",
+    "image": "static/items/HdxKoRcxaiHhfUroU3SnUD/shop.jpg",
+    "category": "oden",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "KFXgynbIs1xX0UFM9xEPvM",
+  "fields": {
+    "name": "nice うどん",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:08:00.077Z",
+    "updated_at": "2025-09-04T04:44:29.455Z",
+    "image": "static/items/KFXgynbIs1xX0UFM9xEPvM/20220707_113050.webp",
+    "category": "udon",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "LVHXNb5ry9M1nHhnWXtE6m",
+  "fields": {
+    "name": "cじ",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:18:31.461Z",
+    "updated_at": "2025-09-02T04:18:31.461Z",
+    "image": "static/items/LVHXNb5ry9M1nHhnWXtE6m/shop.jpg",
+    "category": "donburi",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "Lyr0Sw5Eg0FzOY1SCw8dqX",
+  "fields": {
+    "name": "じあ",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:07:18.890Z",
+    "updated_at": "2025-09-02T04:07:18.890Z",
+    "image": "static/items/Lyr0Sw5Eg0FzOY1SCw8dqX/shop.jpg",
+    "category": "washoku",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "M5RULvqU5u9EiBARo3mK29",
+  "fields": {
+    "name": "djiq",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:38:59.321Z",
+    "updated_at": "2025-09-02T04:38:59.321Z",
+    "image": "",
+    "category": "hanberga",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "Mp8WuPV13lVeZ5apfKvY5U",
+  "fields": {
+    "name": "uaoi",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:08:36.312Z",
+    "updated_at": "2025-09-02T04:08:36.312Z",
+    "image": "static/items/Mp8WuPV13lVeZ5apfKvY5U/shop.jpg",
+    "category": "udon",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "NPerxfFh2ZrfZMpzEoZWcR",
+  "fields": {
+    "name": "てんてん",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:49:08.413Z",
+    "updated_at": "2025-09-02T04:49:08.413Z",
+    "image": "static/items/NPerxfFh2ZrfZMpzEoZWcR/shop.jpg",
+    "category": "tenpura",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "O1cuYaRwUFfD1Xhylfp5ns",
+  "fields": {
+    "name": "たこいい",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:43:09.970Z",
+    "updated_at": "2025-09-02T04:43:09.970Z",
+    "image": "static/items/O1cuYaRwUFfD1Xhylfp5ns/shop.jpg",
+    "category": "takoyaki",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "Pn2g8Dypn7VoE73GWPsTHR",
+  "fields": {
+    "name": "あげあげ",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:27:48.753Z",
+    "updated_at": "2025-09-02T04:27:48.753Z",
+    "image": "static/items/Pn2g8Dypn7VoE73GWPsTHR/shop.jpg",
+    "category": "agemono",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2871",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "Q92MAHUYlfydoCci7Cnh9E",
+  "fields": {
+    "name": "ajiq",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:34:55.957Z",
+    "updated_at": "2025-09-02T04:34:55.957Z",
+    "image": "static/items/Q92MAHUYlfydoCci7Cnh9E/shop.jpg",
+    "category": "kare",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "RFLo2TR2NIJH92i3zRT6IM",
+  "fields": {
+    "name": "だいlq",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:45:26.134Z",
+    "updated_at": "2025-09-02T04:45:26.134Z",
+    "image": "static/items/RFLo2TR2NIJH92i3zRT6IM/shop.jpg",
+    "category": "yakitori",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "SKBbbom5v0H8bpXLt7Aqau",
+  "fields": {
+    "name": "くぃ",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:28:18.436Z",
+    "updated_at": "2025-09-02T04:28:18.436Z",
+    "image": "static/items/SKBbbom5v0H8bpXLt7Aqau/shop.jpg",
+    "category": "agemono",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "SKb8WXBAIv0pKa4Mvd6SBV",
+  "fields": {
+    "name": "かかいいお",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:42:38.637Z",
+    "updated_at": "2025-09-02T04:42:38.637Z",
+    "image": "",
+    "category": "takoyaki",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-6623",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "SNjBYlRgw2D4OmBFelz3vs",
+  "fields": {
+    "name": "えい",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:20:23.796Z",
+    "updated_at": "2025-09-02T04:20:23.796Z",
+    "image": "static/items/SNjBYlRgw2D4OmBFelz3vs/shop.jpg",
+    "category": "ramen",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "UKZoxrttZhwEq7wy1UsFMs",
+  "fields": {
+    "name": "waroi",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:06:10.005Z",
+    "updated_at": "2025-09-02T04:06:10.005Z",
+    "image": "static/items/UKZoxrttZhwEq7wy1UsFMs/shop.jpg",
+    "category": "washoku",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "XLQGuDpdHE4t3fP0MmEqkK",
+  "fields": {
+    "name": "あいお",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:37:28.786Z",
+    "updated_at": "2025-09-02T04:37:28.786Z",
+    "image": "static/items/XLQGuDpdHE4t3fP0MmEqkK/shop.jpg",
+    "category": "tyuka",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "ZPBxvvM6I5siNBIAYWe4xT",
+  "fields": {
+    "name": "idlq",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:38:27.346Z",
+    "updated_at": "2025-09-02T04:38:27.346Z",
+    "image": "static/items/ZPBxvvM6I5siNBIAYWe4xT/shop.jpg",
+    "category": "hanberga",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "ZuyWWUtvtkdfp53WUYaZeY",
+  "fields": {
+    "name": "iao",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:40:11.112Z",
+    "updated_at": "2025-09-02T04:40:11.112Z",
+    "image": "static/items/ZuyWWUtvtkdfp53WUYaZeY/shop.jpg",
+    "category": "soba",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "cblr7d7UVj2GhI10jMSqZu",
+  "fields": {
+    "name": "djフィ",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:17:54.394Z",
+    "updated_at": "2025-09-02T04:17:54.394Z",
+    "image": "static/items/cblr7d7UVj2GhI10jMSqZu/shop.jpg",
+    "category": "donburi",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-6623",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "eMaJa7AYcP6VIaLtm7hx8b",
+  "fields": {
+    "name": "q時",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:27:07.872Z",
+    "updated_at": "2025-09-02T04:27:07.872Z",
+    "image": "static/items/eMaJa7AYcP6VIaLtm7hx8b/shop.jpg",
+    "category": "oden",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "fDKHWfBfnrteItoYyUWMwk",
+  "fields": {
+    "name": "dji",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:32:59.847Z",
+    "updated_at": "2025-09-02T04:32:59.847Z",
+    "image": "static/items/fDKHWfBfnrteItoYyUWMwk/shop.jpg",
+    "category": "yakiniku",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "hv80anGmULiMpUa8125mAg",
+  "fields": {
+    "name": "じクォ",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:43:37.855Z",
+    "updated_at": "2025-09-02T04:43:37.856Z",
+    "image": "static/items/hv80anGmULiMpUa8125mAg/shop.jpg",
+    "category": "takoyaki",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "jN5l8JWhcXk1ac3GBt2bZc",
+  "fields": {
+    "name": "dsfa",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:34:05.435Z",
+    "updated_at": "2025-09-02T04:34:05.435Z",
+    "image": "static/items/jN5l8JWhcXk1ac3GBt2bZc/shop.jpg",
+    "category": "kare",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "kTwkbh3PfVdu1bTXhBiMvm",
+  "fields": {
+    "name": "和みる",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:29:35.432Z",
+    "updated_at": "2025-09-02T04:29:35.432Z",
+    "image": "static/items/kTwkbh3PfVdu1bTXhBiMvm/shop.jpg",
+    "category": "izakaya",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "kq7DgZy875ZvMDAXB7o4vv",
+  "fields": {
+    "name": "色や",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:06:47.740Z",
+    "updated_at": "2025-09-02T04:06:47.740Z",
+    "image": "static/items/kq7DgZy875ZvMDAXB7o4vv/shop.jpg",
+    "category": "washoku",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "ldfzDGZlenLnZjm431WyrG",
+  "fields": {
+    "name": "jdいs",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:30:09.134Z",
+    "updated_at": "2025-09-02T04:30:09.134Z",
+    "image": "static/items/ldfzDGZlenLnZjm431WyrG/shop.jpg",
+    "category": "izakaya",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "n9R74p7vUWIbg8HdI5mm7a",
+  "fields": {
+    "name": "djフィq",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:48:29.433Z",
+    "updated_at": "2025-09-02T04:48:29.433Z",
+    "image": "static/items/n9R74p7vUWIbg8HdI5mm7a/shop.jpg",
+    "category": "tenpura",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "o8IwsweH80mFhZrlAkPwO6",
+  "fields": {
+    "name": "fっ時",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:26:37.974Z",
+    "updated_at": "2025-09-02T04:26:37.974Z",
+    "image": "static/items/o8IwsweH80mFhZrlAkPwO6/shop.jpg",
+    "category": "oden",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2871",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "qFryBS8PRcalqDOuCrs0QV",
+  "fields": {
+    "name": "ラーメン嵐",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:19:13.410Z",
+    "updated_at": "2025-09-04T04:45:13.633Z",
+    "image": "static/items/qFryBS8PRcalqDOuCrs0QV/ra.webp",
+    "category": "ramen",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "rByCpLTz9hrAWnFXKGVuui",
+  "fields": {
+    "name": "いどあじ",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:09:12.519Z",
+    "updated_at": "2025-09-02T04:09:12.519Z",
+    "image": "static/items/rByCpLTz9hrAWnFXKGVuui/shop.jpg",
+    "category": "udon",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "rbJK3dGQYBelsYfTisqi1I",
+  "fields": {
+    "name": "dじゃい",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:45:52.129Z",
+    "updated_at": "2025-09-02T04:45:52.129Z",
+    "image": "static/items/rbJK3dGQYBelsYfTisqi1I/shop.jpg",
+    "category": "yakitori",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "s8fQ82SmEbwlRN3IK2nUsr",
+  "fields": {
+    "name": "kdos",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:40:52.734Z",
+    "updated_at": "2025-09-02T04:40:52.734Z",
+    "image": "static/items/s8fQ82SmEbwlRN3IK2nUsr/shop.jpg",
+    "category": "okonomi",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2871",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "ueAG5wrotgSslVmBqFQIqO",
+  "fields": {
+    "name": "ぢあ",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:47:24.954Z",
+    "updated_at": "2025-09-02T04:47:24.954Z",
+    "image": "static/items/ueAG5wrotgSslVmBqFQIqO/shop.jpg",
+    "category": "sukiyaki",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "umZmKPWOqnZyMkX7x6eOVC",
+  "fields": {
+    "name": "だい",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:28:44.815Z",
+    "updated_at": "2025-09-02T04:28:44.815Z",
+    "image": "static/items/umZmKPWOqnZyMkX7x6eOVC/shop.jpg",
+    "category": "agemono",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "uzfvceD7EymGi2xmV2DBlp",
+  "fields": {
+    "name": "最高丼",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:17:18.621Z",
+    "updated_at": "2025-09-02T04:17:18.621Z",
+    "image": "static/items/uzfvceD7EymGi2xmV2DBlp/shop.jpg",
+    "category": "donburi",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "x0sIa97H7P7uIN7qF8UTug",
+  "fields": {
+    "name": "aq",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:35:23.259Z",
+    "updated_at": "2025-09-02T04:35:23.259Z",
+    "image": "static/items/x0sIa97H7P7uIN7qF8UTug/shop.jpg",
+    "category": "kare",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "x4F2SZbtmkEXxCJ2mDRv05",
+  "fields": {
+    "name": "ji",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:34:30.356Z",
+    "updated_at": "2025-09-02T04:34:30.357Z",
+    "image": "static/items/x4F2SZbtmkEXxCJ2mDRv05/shop.jpg",
+    "category": "kare",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2873",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "zs4gpwSvn6VeN7bSXJCOsd",
+  "fields": {
+    "name": "da",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:32:18.789Z",
+    "updated_at": "2025-09-02T04:32:18.789Z",
+    "image": "static/items/zs4gpwSvn6VeN7bSXJCOsd/shop.jpg",
+    "category": "yakiniku",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-6623",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+},
+{
+  "model": "base.item",
+  "pk": "zwqu6tjyipJEqI8oZBb3p4",
+  "fields": {
+    "name": "和モリモリ",
+    "description": "ご予約承り中！\r\n掘りごたつ最大40名様、テーブル最大23名様まで対応◎",
+    "is_published": true,
+    "created_at": "2025-09-02T04:05:29.040Z",
+    "updated_at": "2025-09-02T04:05:29.040Z",
+    "image": "static/items/zwqu6tjyipJEqI8oZBb3p4/shop.jpg",
+    "category": "washoku",
+    "address": "愛知県名古屋市中区栄3-13-21",
+    "phone": "052-561-2872",
+    "tags": [
+      "Bkyu gurume"
+    ]
+  }
+}
+]
