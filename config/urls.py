@@ -8,9 +8,10 @@ urlpatterns = [
     # review_views.py にビューを作成
     path('my-reviews/', review_views.MyReviewListView.as_view(), name='my_review_list'),
     path("my-reviews/delete/<str:item_id>/", review_views.delete_reviewed_item, name="delete_reviewed_item"),
-
+   
     path('reservation/list/', reservation_views.reservation_list, name='reservation_list'),
     path('reservation/<str:item_id>/', reservation_views.make_reservation, name='make_reservation'),
+    path("reservations/cancel/<int:reservation_id>/", reservation_views.cancel_reservation, name="cancel_reservation"),
     path('favorites/', review_views.favorite_items, name='favorite_items'),
 
     path('item/<str:item_id>/favorite/', review_views.toggle_favorite, name='toggle_favorite'),

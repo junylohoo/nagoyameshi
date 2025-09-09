@@ -2,6 +2,7 @@ from django.contrib.auth.models import User
 from django.db import models
 from django.utils.crypto import get_random_string
 from django.conf import settings
+from django.utils import timezone
 import os
 
 def create_id():
@@ -76,11 +77,20 @@ class Review(models.Model):
     
     
 class Reservation(models.Model):
-        user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-        item = models.ForeignKey(Item, on_delete=models.CASCADE)
-        reserved_at = models.DateTimeField(auto_now_add=True)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    item = models.ForeignKey(Item, on_delete=models.CASCADE)
+    date_time = models.DateTimeField(default=timezone.now)  # デフォルト付き
+    num_people = models.PositiveIntegerField(default=1)
+    seat_type = models.CharField(
+        max_length=20,
+        choices=[("テーブル席", "テーブル席"), ("カウンター席", "カウンター席")],
+        default="テーブル席"
+    )
+    comment = models.TextField(blank=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
 
-def __str__(self):
-        return f"{self.user.username} - {self.item.name}"
+    def __str__(self):
+        return f"{self.user.username} - {self.item.name} ({self.date_time})"
+
 
 
