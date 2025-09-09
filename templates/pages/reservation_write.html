@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+<div class="container mt-5">
+  <h2 class="mb-4">予約フォーム</h2>
+
+  <form method="post">
+    {% csrf_token %}
+    
+    <div class="mb-3">
+      <label class="form-label"><strong>お店</strong></label>
+      <input type="text" class="form-control" value="{{ item.name }}" readonly>
+    </div>
+
+    <div class="mb-3">
+      <label for="date_time" class="form-label"><strong>日付・時間</strong></label>
+      <input type="datetime-local" class="form-control" id="date_time" name="date_time" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="num_people" class="form-label"><strong>人数</strong></label>
+      <input type="number" class="form-control" id="num_people" name="num_people" min="1" max="20" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label"><strong>席タイプ</strong></label><br>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="seat_type" id="table_seat" value="テーブル席" required>
+        <label class="form-check-label" for="table_seat">テーブル席</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="seat_type" id="counter_seat" value="カウンター席">
+        <label class="form-check-label" for="counter_seat">カウンター席</label>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="comment" class="form-label"><strong>コメント</strong></label>
+      <textarea class="form-control" id="comment" name="comment" rows="3" placeholder="ご要望などがあればご記入ください"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success">予約を確定する</button>
+    <a href="{% url 'item_detail' item.id %}" class="btn btn-secondary ms-2">戻る</a>
+  </form>
+</div>
+{% endblock %}
