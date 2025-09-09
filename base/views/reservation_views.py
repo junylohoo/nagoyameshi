@@ -20,11 +20,11 @@ def make_reservation(request, item_id):
         Reservation.objects.create(
             user=request.user,
             item=item,
-            date_time=date_time,
-            num_people=num_people,
-            seat_type=seat_type,
-            comment=comment
-        )
+            date_time=request.POST.get("date_time"),
+            num_people=request.POST.get("num_people"),
+            seat_type=request.POST.get("seat_type"),
+            comment=request.POST.get("comment")
+            )
         messages.success(request, "予約が完了しました。")
         return redirect("reservation_list")
 

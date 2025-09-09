@@ -1,4 +1,3 @@
-
 <div class="container mt-5">
   <h2 class="mb-4">予約リスト</h2>
 
@@ -9,9 +8,17 @@
           <div>
             <strong>{{ res.item.name }}</strong><br>
             カテゴリー: {{ res.item.category.name }}<br>
-            予約日時: {{ res.reserved_at|date:"Y-m-d H:i" }}
+            予約日時: {{ res.date_time|date:"Y-m-d H:i" }}<br>
+            人数: {{ res.num_people }}人<br>
+            席タイプ: {{ res.seat_type }}
           </div>
-          <a href="{% url 'item_detail' res.item.id %}" class="btn btn-info">詳細</a>
+          <div>
+            <a href="{% url 'item_detail' res.item.id %}" class="btn btn-info btn-sm">詳細</a>
+            <a href="{% url 'cancel_reservation' res.id %}" class="btn btn-danger btn-sm"
+               onclick="return confirm('この予約をキャンセルしてもよろしいですか？');">
+              キャンセル
+            </a>
+          </div>
         </li>
       {% endfor %}
     </ul>
