@@ -24,7 +24,7 @@
                 {{ item.category.name }}
               </p>
               <p class="mb-0">
-                ⭐️ {% if item.avg_rating %} {{ item.avg_rating }} / 5 {% else %} - {% endif %}
+                ⭐️ {% if item.avg_rating %} {{ item.avg_rating|floatformat:1 }} / 5 {% else %} - {% endif %}
               </p>
             </div>
           </div>
