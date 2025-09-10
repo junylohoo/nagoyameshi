@@ -1,16 +1,39 @@
+<div class="container mt-5">
+  <h2 class="mb-4">{{ category.name }}が食べたいお店</h2>
 
-  <h2>{{ category.name }}のお店一覧</h2>
   {% if items %}
-    <ul>
+    <div class="row">
       {% for item in items %}
-        <li>
-          <a href="{% url 'item_detail' item.id %}">
-            {{ item.name }}
-          </a>
-        </li>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <!-- 写真 -->
+            {% if item.image %}
+              <img src="{{ item.image.url }}" class="card-img-top img-fluid" alt="{{ item.name }}">
+            {% else %}
+              <img src="{% static 'img/category/shop.jpg' %}" class="card-img-top img-fluid" alt="{{ item.name }}">
+            {% endif %}
+
+            <!-- 店舗情報 -->
+            <div class="card-body text-center">
+              <h5 class="card-title">
+                <a href="{% url 'item_detail' item.id %}" class="text-dark font-weight-bold">
+                  {{ item.name }}
+                </a>
+              </h5>
+              <p class="card-text mb-1 text-muted">
+                {{ item.category.name }}
+              </p>
+              <p class="mb-0">
+                ⭐️ {% if item.avg_rating %} {{ item.avg_rating }} / 5 {% else %} - {% endif %}
+              </p>
+            </div>
+          </div>
+        </div>
       {% endfor %}
-    </ul>
+    </div>
   {% else %}
-    <p>このカテゴリのお店はまだありません。</p>
+    <p>お店はまだ登録されていません。</p>
   {% endif %}
+</div>
+
 
