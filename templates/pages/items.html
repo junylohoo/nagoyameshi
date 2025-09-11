@@ -5,9 +5,44 @@
   {% if category %}
     <!-- 背景写真 + タイトル -->
     <div class="position-relative text-center mb-5">
-      <img src="{% static 'img/item_detail/' %}{{ category.slug }}.png"
-           class="img-fluid w-100 rounded shadow"
-           alt="{{ category.name }}">
+
+      {% if category.slug == "washoku" %}
+        <img src="{% static 'img/item_detail/washoku.png' %}" class="img-fluid w-100 rounded shadow" alt="{{ category.name }}">
+      {% elif category.slug == "udon" %}
+        <img src="{% static 'img/item_detail/udon.jpg' %}" class="img-fluid w-100 rounded shadow" alt="{{ category.name }}">
+      {% elif category.slug == "donburi" %}
+        <img src="{% static 'img/item_detail/donburi.jpg' %}" class="img-fluid w-100 rounded shadow" alt="{{ category.name }}">
+      {% elif category.slug == "ramen" %}
+        <img src="{% static 'img/item_detail/ramen.webp' %}" class="img-fluid w-100 rounded shadow" alt="{{ category.name }}">
+      {% elif category.slug == "oden" %}
+        <img src="{% static 'img/item_detail/oden.jpg' %}" class="img-fluid w-100 rounded shadow" alt="{{ category.name }}">
+      {% elif category.slug == "agemono" %}
+        <img src="{% static 'img/item_detail/agemono.jpg' %}" class="img-fluid w-100 rounded shadow" alt="{{ category.name }}">
+      {% elif category.slug == "izakaya" %}
+        <img src="{% static 'img/item_detail/izakaya.webp' %}" class="img-fluid w-100 rounded shadow" alt="{{ category.name }}">
+      {% elif category.slug == "yakiniku" %}
+        <img src="{% static 'img/item_detail/yakiniku.webp' %}" class="img-fluid w-100 rounded shadow" alt="{{ category.name }}">
+      {% elif category.slug == "kare" %}
+        <img src="{% static 'img/item_detail/kare.jpeg' %}" class="img-fluid w-100 rounded shadow" alt="{{ category.name }}">
+      {% elif category.slug == "tyuka" %}
+        <img src="{% static 'img/item_detail/tyuka.png' %}" class="img-fluid w-100 rounded shadow" alt="{{ category.name }}">
+      {% elif category.slug == "hanberga" %}
+        <img src="{% static 'img/item_detail/hanbaga.jpeg' %}" class="img-fluid w-100 rounded shadow" alt="{{ category.name }}">
+      {% elif category.slug == "soba" %}
+        <img src="{% static 'img/item_detail/soba.jpg' %}" class="img-fluid w-100 rounded shadow" alt="{{ category.name }}">
+      {% elif category.slug == "okonomi" %}
+        <img src="{% static 'img/item_detail/okonomi.jpg' %}" class="img-fluid w-100 rounded shadow" alt="{{ category.name }}">
+      {% elif category.slug == "takoyaki" %}
+        <img src="{% static 'img/item_detail/takoyaki.jpg' %}" class="img-fluid w-100 rounded shadow" alt="{{ category.name }}">
+      {% elif category.slug == "yakitori" %}
+        <img src="{% static 'img/item_detail/yakitori.webp' %}" class="img-fluid w-100 rounded shadow" alt="{{ category.name }}">
+      {% elif category.slug == "sukiyaki" %}
+        <img src="{% static 'img/item_detail/sukiyaki.jpg' %}" class="img-fluid w-100 rounded shadow" alt="{{ category.name }}">
+      {% elif category.slug == "tenpura" %}
+        <img src="{% static 'img/item_detail/tenpura.jpg' %}" class="img-fluid w-100 rounded shadow" alt="{{ category.name }}">
+      {% endif %}
+
+      <!-- タイトルを中央に重ねる -->
       <h2 class="position-absolute top-50 start-50 translate-middle text-white fw-bold"
           style="font-size: 2.5rem; text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">
         {{ category.name }}が食べたいお店一覧
