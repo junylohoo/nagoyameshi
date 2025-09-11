@@ -6,6 +6,15 @@
     overflow: hidden;
     background-size: cover;
     background-position: center;
+    margin-bottom: 50px;  /* PC での余白 */
+  }
+  
+  /* 小画面用 */
+  @media (max-width: 576px) {
+    .category-hero {
+      height: 200px;
+      margin-bottom: 30px; /* スマホでは少し小さめの余白 */
+    }
   }
   
   /* 暗めのオーバーレイ */
@@ -33,10 +42,11 @@
     text-align: center;
   }
   
-  /* 小さな画面用 */
+  /* 小画面用タイトルサイズ調整 */
   @media (max-width: 576px) {
-    .category-hero { height: 200px; }
-    .category-hero .hero-title { font-size: 1.4rem; }
+    .category-hero .hero-title {
+      font-size: 1.4rem;
+    }
   }
   
   /* カテゴリ別背景 */
