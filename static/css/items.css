@@ -1,0 +1,60 @@
+/* ヒーロー共通 */
+.category-hero {
+    position: relative;
+    height: 320px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* 暗めのオーバーレイ */
+  .category-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 1;
+  }
+  
+  /* タイトル中央表示 */
+  .category-hero .hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    margin: 0;
+    padding: 0 0.8rem;
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  
+  /* 小さな画面用 */
+  @media (max-width: 576px) {
+    .category-hero { height: 200px; }
+    .category-hero .hero-title { font-size: 1.4rem; }
+  }
+  
+  /* カテゴリ別背景 */
+  .category-hero.washoku   { background-image: url('../img/item_detail/washoku.png'); }
+  .category-hero.udon      { background-image: url('../img/item_detail/udon.jpg'); }
+  .category-hero.donburi   { background-image: url('../img/item_detail/donburi.jpg'); }
+  .category-hero.ramen     { background-image: url('../img/item_detail/ramen.webp'); }
+  .category-hero.oden      { background-image: url('../img/item_detail/oden.jpg'); }
+  .category-hero.agemono   { background-image: url('../img/item_detail/agemono.jpg'); }
+  .category-hero.izakaya   { background-image: url('../img/item_detail/izakaya.webp'); }
+  .category-hero.yakiniku  { background-image: url('../img/item_detail/yakiniku.webp'); }
+  .category-hero.kare      { background-image: url('../img/item_detail/kare.jpeg'); }
+  .category-hero.tyuka     { background-image: url('../img/item_detail/tyuka.png'); }
+  .category-hero.hanberga  { background-image: url('../img/item_detail/hanbaga.jpeg'); }
+  .category-hero.soba      { background-image: url('../img/item_detail/soba.jpg'); }
+  .category-hero.okonomi   { background-image: url('../img/item_detail/okonomi.jpg'); }
+  .category-hero.takoyaki  { background-image: url('../img/item_detail/takoyaki.jpg'); }
+  .category-hero.yakitori  { background-image: url('../img/item_detail/yakitori.webp'); }
+  .category-hero.sukiyaki  { background-image: url('../img/item_detail/sukiyaki.jpg'); }
+  .category-hero.tenpura   { background-image: url('../img/item_detail/tenpura.jpg'); }
+  
