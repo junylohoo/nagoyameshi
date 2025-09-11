@@ -1,19 +1,19 @@
-/* ヒーロー共通 */
+/* カテゴリヒーロー共通 */
 .category-hero {
     position: relative;
-    height: 320px;
+    height: 400px;               /* 高さを大きくして余白を確保 */
     border-radius: 0.5rem;
     overflow: hidden;
     background-size: cover;
     background-position: center;
-    margin-bottom: 50px;  /* PC での余白 */
+    margin-bottom: 80px;         /* カードとの間隔 */
   }
   
   /* 小画面用 */
   @media (max-width: 576px) {
     .category-hero {
-      height: 200px;
-      margin-bottom: 30px; /* スマホでは少し小さめの余白 */
+      height: 250px;
+      margin-bottom: 50px;       /* スマホでも余白確保 */
     }
   }
   
@@ -38,14 +38,14 @@
     text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
     margin: 0;
     padding: 0 0.8rem;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     text-align: center;
   }
   
   /* 小画面用タイトルサイズ調整 */
   @media (max-width: 576px) {
     .category-hero .hero-title {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
     }
   }
   
