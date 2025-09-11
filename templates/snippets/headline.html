@@ -25,8 +25,7 @@
   </div>
 </div>
 
-
-<!-- Swiper CSS & JS（このページだけで使う想定ならここでOK） -->
+<!-- Swiper CSS & JS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
@@ -52,6 +51,7 @@
   .swiper { 
     flex: 2; 
     height: 500px; 
+    position: relative;
   }
   .swiper-slide img { 
     width: 100%; 
@@ -59,17 +59,62 @@
     object-fit: cover; 
   }
 
+  /* スマホでも矢印を大きく・タップしやすく */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #fff;        /* 矢印の色 */
+    width: 50px;         /* ボタン幅 */
+    height: 50px;        /* ボタン高さ */
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 24px;     /* 矢印のサイズ */
+  }
+
   /* ===== スマホ対応（768px以下で縦並び） ===== */
   @media (max-width: 768px) {
     .headline-container {
-      flex-direction: column;   /* 横並び → 縦並び */
+      flex-direction: column;
     }
     .intro-image img {
-      height: auto;  /* 画像の高さは自動調整 */
+      height: auto;
     }
     .swiper {
-      height: 300px; /* スマホ用にスライドの高さを縮小 */
+      height: 300px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 40px;
+      height: 40px;
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: 20px;
     }
   }
 </style>
 
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    touchEventsTarget: 'container',
+    simulateTouch: true,
+    grabCursor: true,
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      768: { slidesPerView: 1 }
+    }
+  });
+</script>
