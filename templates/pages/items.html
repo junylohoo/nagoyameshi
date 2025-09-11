@@ -14,11 +14,13 @@
     <h2 class="mb-4" style="font-size: 2rem;">お店一覧</h2>
   {% endif %}
 
-  <!-- 以下、items のカード表示はそのまま続ける -->
+  <!-- カテゴリ写真と items の間に余白 -->
+  <div class="mb-4"></div>
+
   {% if items %}
-    <div class="row">
+    <div class="row g-4"> <!-- g-4 でカード間に余白 -->
       {% for item in items %}
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="col-lg-3 col-md-4 col-sm-6">
           <div class="card h-100 shadow-sm border-0 text-center">
             {% if item.image and item.image.name %}
               <img src="{{ item.image.url }}" class="card-img-top mx-auto d-block" style="width:50%; height:auto;" alt="{{ item.name }}">
@@ -41,51 +43,6 @@
       {% endfor %}
     </div>
   {% else %}
-    <p style="font-size: 1.5rem;">お店はまだ登録されていません。</p>
-  {% endif %}
-</div>
-
-
-  {% if items %}
-    <div class="row">
-      {% for item in items %}
-        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-          <div class="card h-100 shadow-sm border-0 text-center">
-
-            <!-- 写真 -->
-            {% if item.image and item.image.name %}
-              <img src="{{ item.image.url }}" 
-                   class="card-img-top mx-auto d-block" 
-                   style="width:50%; height:auto;" 
-                   alt="{{ item.name }}">
-            {% else %}
-              <img src="{% static 'img/category/shop.jpg' %}" 
-                   class="card-img-top mx-auto d-block" 
-                   style="width:50%; height:auto;" 
-                   alt="{{ item.name }}">
-            {% endif %}
-
-            <!-- 店舗情報 -->
-            <div class="card-body">
-              <h5 class="card-title" style="font-size: 2rem;">
-                <a href="{% url 'item_detail' item.id %}" class="text-dark font-weight-bold">
-                  {{ item.name }}
-                </a>
-              </h5>
-
-              <p class="card-text mb-1 text-muted" style="font-size: 1.5rem;">
-                カテゴリー: {{ item.category.name|default:"カテゴリー不明" }}
-              </p>
-
-              <p class="mb-0" style="font-size: 1.5rem;">
-                平均評価: ⭐️ {% if item.avg_rating %} {{ item.avg_rating|floatformat:1 }} / 5 {% else %} - {% endif %}
-              </p>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  {% else %}
-    <p style="font-size: 1.5rem;">お店はまだ登録されていません。</p>
+    <p class="mt-4" style="font-size: 1.5rem;">お店はまだ登録されていません。</p>
   {% endif %}
 </div>
