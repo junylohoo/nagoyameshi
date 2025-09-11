@@ -1,13 +1,21 @@
 {% load static %}
 
 <div class="container mt-5">
-  <h2 class="mb-4" style="font-size: 2rem;">
-    {% if category %}
-      {{ category.name }}が食べたいお店一覧
-    {% else %}
-      お店一覧
-    {% endif %}
-  </h2>
+
+  {% if category %}
+    <!-- 背景写真 + タイトル -->
+    <div class="position-relative text-center mb-5">
+      <img src="{% static 'img/item_detail/' %}{{ category.slug }}.png"
+           class="img-fluid w-100 rounded shadow"
+           alt="{{ category.name }}">
+      <h2 class="position-absolute top-50 start-50 translate-middle text-white fw-bold"
+          style="font-size: 2.5rem; text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">
+        {{ category.name }}が食べたいお店一覧
+      </h2>
+    </div>
+  {% else %}
+    <h2 class="mb-4" style="font-size: 2rem;">お店一覧</h2>
+  {% endif %}
 
   {% if items %}
     <div class="row">
@@ -48,7 +56,6 @@
         </div>
       {% endfor %}
     </div>
-
   {% else %}
     <p style="font-size: 1.5rem;">お店はまだ登録されていません。</p>
   {% endif %}
