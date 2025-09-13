@@ -41,12 +41,31 @@
   .intro-image { 
     flex: 1; 
   }
-  .intro-image img { 
-    width: 100%; 
-    height: 600px; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
-    object-fit: cover;
+
+  /* PC用 */
+  @media (min-width: 769px) {
+    .intro-image img {
+      width: 100%;
+      height: auto;
+      max-height: 600px;
+      object-fit: contain;      /* 全体表示 */
+      background-color: #000;   /* 足りない部分は黒で補完 */
+      border-radius: 10px; 
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    }
+  }
+
+  /* スマホ用 */
+  @media (max-width: 768px) {
+    .intro-image img {
+      width: 100%;
+      height: auto;
+      max-height: 300px;        /* スマホは少し小さめ */
+      object-fit: contain;
+      background-color: #000;
+      border-radius: 10px; 
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    }
   }
 
   .swiper { 
@@ -74,15 +93,8 @@
     font-size: 24px;
   }
 
-  /* ===== スマホ対応（768px以下で縦並び） ===== */
+  /* スマホでの矢印位置 */
   @media (max-width: 768px) {
-    .headline-container {
-      flex-direction: column;
-      align-items: center;
-    }
-    .intro-image img {
-      height: auto;
-    }
     .swiper {
       height: auto;
       min-height: 200px;
