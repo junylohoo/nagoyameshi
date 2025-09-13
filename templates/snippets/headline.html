@@ -75,9 +75,9 @@
       flex-direction: column;
       align-items: center;
     }
-    .intro-image img {
-      height: auto;
-    }
+    .intro-image img { 
+      width: 100%; height: auto; max-height: 300px; /* スマホは少し高さ制限 */ object-fit: contain; background-color: #000; }
+      
     .swiper {
       height: auto;
       min-height: 200px;
