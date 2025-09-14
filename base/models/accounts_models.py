@@ -5,7 +5,6 @@ class CustomerUser(AbstractUser):
     GENDER_CHOICES = [
         ('M', '男性'),
         ('F', '女性'),
-        ('O', 'その他'),
     ]
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES, blank=True, null=True)
     birth_date = models.DateField(blank=True, null=True)

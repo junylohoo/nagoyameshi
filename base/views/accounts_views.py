@@ -52,7 +52,7 @@ def stripe_webhook(request):
 # カスタムユーザー作成フォーム（UserCreationForm を拡張）
 class CustomUserCreationForm(UserCreationForm):
     birth_date = forms.DateField(required=False, widget=forms.DateInput(attrs={'type': 'date'}))
-    gender = forms.ChoiceField(choices=[('M', '男性'), ('F', '女性'), ('O', 'その他')], required=False)
+    gender = forms.ChoiceField(choices=[('M', '男性'), ('F', '女性')], required=False)
 
     class Meta:
         model = User
